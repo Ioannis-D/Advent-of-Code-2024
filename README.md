@@ -1,6 +1,6 @@
 # Advent-of-Code-2024
 My solutions to Advent of Code 2024
 
-Language: Python
+**Language**: Python
 
-Editor: Neovim, Jupyter Lab (occasionally)
+**Editor**: Neovim, Jupyter Lab (occasionally)
