@@ -26,6 +26,6 @@ list_second_numbers.sort()
 # Print the result by adding the absolute difference of the values of each list.
 # Firstly, the two lists are combined with the zip to be able to retrieve each respective element.
 # Then, the substraction takes place but with the absolute value. Finally, the results are sumed and the answer is revealed.
-if __name__ == "main":
+if __name__ == "__main__":
     print(sum(abs(x-y) for x, y in zip(list_first_numbers, list_second_numbers)))
 
