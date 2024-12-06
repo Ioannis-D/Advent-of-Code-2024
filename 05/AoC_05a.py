@@ -31,12 +31,15 @@ good_list = []
 bad_list = []
 for list_ in new_list:
     found = False
+    stop = False
     for i in range(len(list_)-1, 0, -1):
-        for x in list_[0:i]:
-            if x in d[list_[i]]:
-                found = True
-                bad_list.append(list_)
-                break
+        if not stop:
+            for x in list_[0:i]:
+                if x in d[list_[i]]:
+                    found = True
+                    bad_list.append(list_)
+                    stop = True
+                    break
     if not found:
         good_list.append(list_)
 
